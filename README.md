@@ -20,7 +20,14 @@ Ant Colony Optimization (ACO) is a heuristic algorithm that has been widely used
 </table>
 </div>
 
-## 🔑 Usage
+## 🔑 Repository requirements
+- create python environment using conda:
+```shell
+conda create -n transaco-py38 python=3.8 -y
+conda activate transaco-py38
+pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install torch-scatter==2.0.7 torch-sparse==0.6.9 torch-geometric==2.0.4 d2l networkx==2.8.4 numpy==1.23.3 numba==0.56.4
+```
 
 ### Dependencies
 
