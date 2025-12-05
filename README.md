@@ -61,14 +61,13 @@ pip install torch-sparse==0.6.9 -f https://data.pyg.org/whl/torch-1.7.0+cu110.ht
 pip install torch-geometric==2.0.4
 ```
 ## Development
-### Setting up
 - First, for each problem type, run the utils.py file in the corresponding problem folder to generate the training, validation, and test datasets.
 - Then, run train.py to train the model and test.py to evaluate it on the test set.
 ```shell
 python train.py --nodes 100
 python test.py --nodes 100
 ```
-If you would like to perform a Population Evolution Graph analysis of the algorithm, you can run the following command:
+- If you would like to perform a Population Evolution Graph analysis of the algorithm, you can run the following command:
 ```shell
 python test_peg.py --nodes 100 --enable_peg --peg_dir ./peg_outputs --peg_instances 0,1,...
 ```
