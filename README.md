@@ -8,10 +8,10 @@ Ant Colony Optimization (ACO) is a heuristic algorithm that has been widely used
 <div align="center">
 <table>
 <tr>
-    <td align="center" width="30%"><img src="https://github.com/sunbo5202/TransACO/blob/main/Fig/Motivation.png" 
+    <td align="center" width="10%"><img src="https://github.com/sunbo5202/TransACO/blob/main/Fig/Motivation.png" 
         alt="motivation"/>
     </td>
-    <td align="left" width="30%">
+    <td align="left" width="10%">
         (a) Hybrid methods commonly require substantial expert knowledge to design initial pheromones and heuristic measures independently.
         <br/>   <br/>     
         (b) TransACO automates the design of pheromone matrix and heuristic measures by learning correlated features within problem instances.
@@ -24,7 +24,7 @@ Ant Colony Optimization (ACO) is a heuristic algorithm that has been widely used
 <div align="center">
 <table>
 <tr>
-    <td align="left" width="30%">
+    <td align="left" width="10%">
         Taking TSP as an example, the method calculates the distance matrix and node coordinates based on the problem instance. The results are then input to the Transformer, which generates the HM and PM. ACO constructs the initial solution and optimizes it using optional local search techniques. Finally, the method samples from the obtained solution and calculates the reward as feedback.
         <br/>   <br/>
         In modified Transformer, we depart from the standard query–key–value formulation and adopt a query–key-only variant that is tailored to constructing the PM and HM. 
@@ -32,7 +32,7 @@ For each city $i$ in a TSP instance, the Transformer encoder outputs a shared qu
         <br/>   <br/>
         In ACO, we generate the transition probability by leveraging the cooperation between the HM and PM. After constructing a solution, we further apply a candidate-solution perturbation mechanism to perform local search. 
     </td>
-    <td align="center" width="30%"><img src="https://github.com/sunbo5202/TransACO/blob/main/Fig/Framework.png" 
+    <td align="center" width="10%"><img src="https://github.com/sunbo5202/TransACO/blob/main/Fig/Framework.png" 
         alt="motivation"/>
     </td>
 </tr>
@@ -42,7 +42,7 @@ For each city $i$ in a TSP instance, the Transformer encoder outputs a shared qu
 **Training process of the Transformer-based learner:**
 <div align=center>
     <img src="https://github.com/sunbo5202/TransACO/blob/main/Fig/Train.png" 
-        alt="framework" width="35%"/>
+        alt="framework" width="55%"/>
 </div>
 
 ## 🔑 Repository requirements
