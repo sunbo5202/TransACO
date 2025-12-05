@@ -1,5 +1,6 @@
 # TransACO
-Transformer-Guided Ant Colony Algorithm for Combinatorial Optimization
+This repository contains the official code from "TransACO: Transformer-Guided Ant Colony Algorithm for Combinatorial Optimization".
+- [2025/11/23]: TransACO is currently under review for TETCI.
 ## 🔑 Usage
 
 ### Dependencies
