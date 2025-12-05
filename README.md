@@ -29,6 +29,8 @@ Ant Colony Optimization (ACO) is a heuristic algorithm that has been widely used
         <br/>   <br/>
         In modified Transformer, we depart from the standard query–key–value formulation and adopt a query–key-only variant that is tailored to constructing the PM and HM. 
 For each city $i$ in a TSP instance, the Transformer encoder outputs a shared query vector $q_i \in \mathbb{R}^d$ and two type-specific key vectors $k^{\text{p}}_i, k^{\text{h}}_i \in \mathbb{R}^d$ after linear projection and a ReLU nonlinearity.
+        <br/>   <br/>
+        In ACO, we generate the transition probability by leveraging the cooperation between the HM and PM. After constructing a solution, we further apply a candidate-solution perturbation mechanism to perform local search. 
     </td>
     <td align="center" width="30%"><img src="https://github.com/sunbo5202/TransACO/blob/main/Fig/Framework.png" 
         alt="motivation"/>
