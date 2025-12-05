@@ -13,7 +13,7 @@ Ant Colony Optimization (ACO) is a heuristic algorithm that has been widely used
     <td align="left" width="45%">
         (a) Hybrid methods commonly require substantial expert knowledge to design initial pheromones and heuristic measures independently.
         <br/>   <br/>     
-        TransACO automates the design of initial pheromones and heuristic measures by learning correlated features within problem instances.
+        (b) TransACO automates the design of initial pheromones and heuristic measures by learning correlated features within problem instances.
     </td>
 </tr>
 </table>
