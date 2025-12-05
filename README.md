@@ -26,9 +26,14 @@ Ant Colony Optimization (ACO) is a heuristic algorithm that has been widely used
 conda create -n transaco-py38 python=3.8 -y
 conda activate transaco-py38
 pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
-pip install torch-scatter==2.0.7 torch-sparse==0.6.9 torch-geometric==2.0.4 d2l networkx==2.8.4 numpy==1.23.3 numba==0.56.4
+pip install d2l networkx==2.8.4 numpy==1.23.3 numba==0.56.4
 ```
-
+- PyTorch Scatter / Sparse / Geometric are strongly dependent on the PyTorch and CUDA versions; if using PyTorch 1.7.0 with CUDA 11.0, they can be installed with the following commands.
+```shell
+pip install torch-scatter==2.0.7 -f https://data.pyg.org/whl/torch-1.7.0+cu110.html
+pip install torch-sparse==0.6.9 -f https://data.pyg.org/whl/torch-1.7.0+cu110.html
+pip install torch-geometric==2.0.4
+```
 ### Dependencies
 
 - Python 3.8
