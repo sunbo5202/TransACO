@@ -53,3 +53,10 @@ pip install torch-scatter==2.0.7 -f https://data.pyg.org/whl/torch-1.7.0+cu110.h
 pip install torch-sparse==0.6.9 -f https://data.pyg.org/whl/torch-1.7.0+cu110.html
 pip install torch-geometric==2.0.4
 ```
+## Development
+### Setting up
+First, for each problem type, run the utils.py file in the corresponding problem folder to generate the training, validation, and test datasets.
+Then, run the train.py.
+```shell
+python train.py --nodes 100
+```
