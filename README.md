@@ -25,6 +25,18 @@ Ant Colony Optimization (ACO) is a heuristic algorithm that has been widely used
     <img src="https://github.com/sunbo5202/TransACO/blob/main/Fig/Framework.png" 
         alt="framework" width="35%"/>
 </div>
+<div align="center">
+<table>
+<tr>
+    <td align="left" width="30%">
+        aking TSP as an example, the method calculates the distance matrix and node coordinates based on the problem instance. The results are then input to the Transformer, which generates the HM and PM. ACO constructs the initial solution and optimizes it using optional local search techniques. Finally, the method samples from the obtained solution and calculates the reward as feedback.
+    </td>
+    <td align="center" width="30%"><img src="https://github.com/sunbo5202/TransACO/blob/main/Fig/Framework.png" 
+        alt="motivation"/>
+    </td>
+</tr>
+</table>
+</div>
 
 ## 🔑 Repository requirements
 - Create python environment using conda:
