@@ -20,6 +20,12 @@ Ant Colony Optimization (ACO) is a heuristic algorithm that has been widely used
 </table>
 </div>
 
+**The overview of TransACO framework:**
+<div align=center>
+    <img src="https://github.com/sunbo5202/TransACO/blob/main/Fig/Framework.png" 
+        alt="framework" width="35%"/>
+</div>
+
 ## 🔑 Repository requirements
 - Create python environment using conda:
 ```shell
