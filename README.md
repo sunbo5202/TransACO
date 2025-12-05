@@ -39,6 +39,12 @@ For each city $i$ in a TSP instance, the Transformer encoder outputs a shared qu
 </table>
 </div>
 
+**Training process of the Transformer-based learner:**
+<div align=center>
+    <img src="https://github.com/sunbo5202/TransACO/blob/main/Fig/Train.png" 
+        alt="framework" width="35%"/>
+</div>
+
 ## 🔑 Repository requirements
 - Create python environment using conda:
 ```shell
