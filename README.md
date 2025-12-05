@@ -7,7 +7,7 @@ Ant Colony Optimization (ACO) is a heuristic algorithm that has been widely used
 <div align="center">
 <table>
 <tr>
-    <td align="center" width="55%"><img src="https://github.com/sunbo5202/TransACO/blob/main/Fig/Motivation.png" 
+    <td align="center" width="30%"><img src="https://github.com/sunbo5202/TransACO/blob/main/Fig/Motivation.png" 
         alt="motivation"/>
     </td>
     <td align="left" width="30%">
