@@ -46,12 +46,6 @@ For each city $i$ in a TSP instance, the Transformer encoder outputs a shared qu
 </div>
 The green box represents the ACO solver, and the red box the learner. Firstly, the ACO solver solves the problem instance based on heuristic measures and initial pheromones. Secondly, we take the solutions obtained by the population as samples and calculate rewards based on the average and optimal values. Finally, the Transformer-based learner is updated.
 
-- **Population evolution graph of TransACO**
-<div align=center>
-    <img src="https://github.com/sunbo5202/TransACO/blob/main/Fig/PEG.png" 
-        alt="framework" width="55%"/>
-</div>
-
 ## 🔑 Repository requirements
 - Create python environment using conda:
 ```shell
@@ -74,4 +68,7 @@ pip install torch-geometric==2.0.4
 python train.py --nodes 100
 python test.py --nodes 100
 ```
-
+If you would like to perform a Population Evolution Graph analysis of the algorithm, you can run the following command:
+```shell
+python test_peg.py --nodes 100 --enable_peg --peg_dir ./peg_outputs --peg_instances 0,1,...
+```
