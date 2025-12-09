@@ -1,7 +1,7 @@
 # TransACO
 This repository contains the official code from "TransACO: Transformer-Guided Ant Colony Algorithm for Combinatorial Optimization".
 - [2025/11/23]: TransACO is currently under review for TETCI.
-## Abstract
+## 📷 Abstract
 Ant Colony Optimization (ACO) is a heuristic algorithm that has been widely used to solve combinatorial optimization problems. However, determining heuristic measures and initial pheromones levels in an ACO is problem-specific and often requires expert intervention, posing a significant challenge for the users. We investigate how the Transformer, a powerful learning model based on a self-attention mechanism, can be used to enable the automatic design of heuristic measures and pheromones. We present Transformer-Guided ACO (**_TransACO_**), a framework that combines neural methods with heuristic algorithms. The Transformer is designed as a learner that encodes problem instances, captures individual interactions, and generates heuristic measures and pheromone matrix. Additionally, a candidate point perturbation local search technique is proposed to enhance exploration. We conduct extensive experiments on four representative combinatorial optimization problems—traveling salesman problem, capacitated vehicle routing problem, orienteering problem, and multiple knapsack problem—across diverse instance sizes. Notably, in cross-scale generalization experiments, a model trained solely on small instances successfully transfers to 10k-node problems: on TSP-10k, TransACO achieves a 4.12\% improvement, and on CVRP-10k, it yields a 1.16\% gain over strong baselines. These findings demonstrate the robustness, adaptability, and scalability of TransACO.
 
 - **The motivation of TransACO framework:**
@@ -60,7 +60,7 @@ pip install torch-scatter==2.0.7 -f https://data.pyg.org/whl/torch-1.7.0+cu110.h
 pip install torch-sparse==0.6.9 -f https://data.pyg.org/whl/torch-1.7.0+cu110.html
 pip install torch-geometric==2.0.4
 ```
-## Development
+## 🌐 Development
 - First, for each problem type, run the utils.py file in the corresponding problem folder to generate the training, validation, and test datasets.
 - Then, run train.py to train the model and test.py to evaluate it on the test set.
 ```shell
@@ -71,6 +71,6 @@ python test.py --nodes 100
 ```shell
 python test_peg.py --nodes 100 --enable_peg --peg_dir ./peg_outputs --peg_instances 0,1,...
 ```
-## Acknowledgments
+## ✅ Acknowledgments
 This codebase builds upon the DeepACO framework. We gratefully acknowledge their contributions and recommend citing their work if you use this repository:
 > **DeepACO: Neural-enhanced Ant Systems for Combinatorial Optimization**. NeurIPS 2023 [https://proceedings.neurips.cc/paper_files/paper/2023/hash/883105b282fe15275991b411e6b200c5-Abstract-Conference.html](https://proceedings.neurips.cc/paper_files/paper/2023/hash/883105b282fe15275991b411e6b200c5-Abstract-Conference.html), 2023. 
